@@ -1,0 +1,112 @@
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+
+    /* Adjust logo size and position */
+    .logo {
+        display: none;
+      width: 80px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+  
+    /* Container adjustments for mobile */
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    /* Adjust title font size with a smooth transition */
+    .title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      transition: font-size 0.3s ease-in-out;
+    }
+  
+    /* Adjust subtitle and message font size */
+    .subtitle, .message {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      transition: font-size 0.3s ease-in-out;
+    }
+  
+    /* Email form input and button adjustments */
+    .email-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+  
+    .email-form input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #fab62a;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+  
+    .email-form button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f25738;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+  
+    .email-form button:hover {
+      background-color: #fab62a;
+    }
+  
+    /* Social icon adjustments */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .social-icons .icon {
+      font-size: 1.2rem;
+      margin: 0 10px;
+      padding: 10px;
+      color: #fab62a;
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+  
+    .social-icons .icon:hover {
+      transform: scale(1.1);
+      color: #f25738;
+    }
+  }
+  
+  @media (max-width: 480px) {
+  
+    /* Further adjustments for very small screens */
+    .title {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+  
+    .subtitle, .message {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  
+    /* Adjust input and button for small screens */
+    .email-form input[type="email"], .email-form button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    .social-icons .icon {
+      font-size: 1rem;
+      margin: 0 5px;
+      padding: 8px;
+    }
+  }
+  
