@@ -1,0 +1,164 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Header and Logo Styling */
+  header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust size as needed */
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1); /* Simple hover effect */
+  }
+  
+  .container {
+    max-width: 600px;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Heading Styles */
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fab62a; /* Color for title */
+    margin-bottom: 20px;
+    animation: slideDown 1.5s ease-in-out;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f2f2f2;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #a1a1a1;
+    animation: pulseText 3s infinite;
+  }
+  
+  /* Email Form */
+  .email-form {
+    margin-bottom: 20px;
+    animation: slideUp 1.5s ease-in-out;
+  }
+  
+  .email-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+    width: 70%;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .email-form button {
+    padding: 10px 15px;
+    background-color: #f25738; /* Main button color */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .email-form button:hover {
+    background-color: #fab62a; /* Hover button color */
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    margin-top: 20px;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+  
+  .social-icons .icon {
+    text-decoration: none;
+    color: #fab62a; /* Icon color */
+    margin: 0 10px;
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s;
+  }
+  
+  .social-icons .icon:hover {
+    color: #f25738; /* Hover icon color */
+    animation: shake 0.3s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulseText {
+    0%, 100% {
+      color: #a1a1a1;
+    }
+    50% {
+      color: #f25738;
+    }
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
